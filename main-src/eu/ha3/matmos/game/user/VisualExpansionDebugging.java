@@ -123,7 +123,7 @@ public class VisualExpansionDebugging implements SupportsFrameEvents
 		boolean isActive = vis.isActive();
 		
 		Minecraft mc = Minecraft.getMinecraft();
-		FontRenderer fontRenderer = mc.fontRendererObj;
+		FontRenderer fontRenderer = mc.fontRenderer;
 		
 		fontRenderer.drawStringWithShadow(name + "(" + feed + ")", x, y, isActive ? 0x0099FF : 0xFF0000);
 		

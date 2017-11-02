@@ -63,7 +63,7 @@ public class M__ride_horse extends ModuleProcessor implements Module
 		setValue("name_tag", ride.getCustomNameTag());
 		
 		setValue("health1k", (int) (ride.getHealth() * 1000));
-		setValue("leashed_to_player", ride.getLeashed() && ride.getLeashedToEntity() instanceof EntityPlayer);
+		setValue("leashed_to_player", ride.getLeashed() && ride.getLeashHolder() instanceof EntityPlayer);
         // dag edit func_152119_ch() -> getOwnerId()
 		setValue(
 			"ridden_by_owner",
@@ -73,14 +73,14 @@ public class M__ride_horse extends ModuleProcessor implements Module
         // dag edit func_152119_ch() -> getOwnerId()
 		setValue(
 			"leashed_to_owner",
-			ride.getLeashedToEntity() instanceof EntityPlayer
+			ride.getLeashHolder() instanceof EntityPlayer
 				&& !ride.getOwnerUniqueId().equals("")
-				&& ride.getOwnerUniqueId().equals(((EntityPlayer) ride.getLeashedToEntity()).getGameProfile().getId().toString()));
+				&& ride.getOwnerUniqueId().equals(((EntityPlayer) ride.getLeashHolder()).getGameProfile().getId().toString()));
 		
-		if (ride.getLeashed() && ride.getLeashedToEntity() != null)
+		if (ride.getLeashed() && ride.getLeashHolder() != null)
 		{
-			Entity e = ride.getLeashedToEntity();
-			setValue("leash_distance", (int) (e.getDistanceToEntity(ride) * 1000));
+			Entity e = ride.getLeashHolder();
+			setValue("leash_distance", (int) (e.getDistance(ride) * 1000));
 		}
 		else
 		{

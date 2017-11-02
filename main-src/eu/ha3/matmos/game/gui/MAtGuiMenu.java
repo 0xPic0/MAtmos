@@ -381,16 +381,16 @@ public class MAtGuiMenu extends GuiScreen
 		if (!this.mod.isDebugMode())
 		{
 			drawGradientRect(0, 0, this.width, this.height, 0xC0000000, 0x60000000);
-			drawCenteredString(this.fontRendererObj, "MAtmos Expansions", this.width / 2, 8, 0xffffff);
+			drawCenteredString(this.fontRenderer, "MAtmos Expansions", this.width / 2, 8, 0xffffff);
 		}
 		else
 		{
 			drawGradientRect(0, 0, this.width, this.height, 0xC0C06000, 0x60C06000);
 			drawCenteredString(
-				this.fontRendererObj, "MAtmos Expansions " + TextFormatting.GOLD + "(Dev mode)",
+				this.fontRenderer, "MAtmos Expansions " + TextFormatting.GOLD + "(Dev mode)",
 				this.width / 2, 8, 0xffffff);
 			
-			drawCenteredString(this.fontRendererObj, TextFormatting.YELLOW
+			drawCenteredString(this.fontRenderer, TextFormatting.YELLOW
 				+ "Dev mode is enabled. This may cause Minecraft to run slower.", this.width / 2, _SEPARATOR
 				+ _MIX * (this.IDS_PER_PAGE + 3) - 9, 0xffffff);
 		}
@@ -403,19 +403,19 @@ public class MAtGuiMenu extends GuiScreen
 			if (this.mod.hasNonethelessResourcePacksInstalled())
 			{
 				drawCenteredString(
-					this.fontRendererObj, "Your MAtmos Resource Pack isn't enabled yet!", this.width / 2, 10
+					this.fontRenderer, "Your MAtmos Resource Pack isn't enabled yet!", this.width / 2, 10
 						+ 22 * 6 - 40 + 20, 0xff0000);
 				drawCenteredString(
-					this.fontRendererObj, "Activate it in the Minecraft Options menu for it to run.", this.width / 2,
+					this.fontRenderer, "Activate it in the Minecraft Options menu for it to run.", this.width / 2,
 					10 + 22 * 6 - 40 + 28, 0xff0000);
 			}
 			else
 			{
 				drawCenteredString(
-					this.fontRendererObj, "You don't have any MAtmos Resource Pack installed!", this.width / 2, 10
+					this.fontRenderer, "You don't have any MAtmos Resource Pack installed!", this.width / 2, 10
 						+ 22 * 6 - 40 + 20, 0xff0000);
 				drawCenteredString(
-					this.fontRendererObj, "Put the Resource Pack in the resourcepacks/ folder.", this.width / 2, 10
+					this.fontRenderer, "Put the Resource Pack in the resourcepacks/ folder.", this.width / 2, 10
 						+ 22 * 6 - 40 + 28, 0xff0000);
 			}
 		}

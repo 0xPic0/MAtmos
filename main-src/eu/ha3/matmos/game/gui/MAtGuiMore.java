@@ -207,15 +207,15 @@ public class MAtGuiMore extends GuiScreen
         if (!this.mod.isDebugMode())
         {
             drawGradientRect(0, 0, this.width, this.height, 0xC0000000, 0x60000000);
-            drawCenteredString(this.fontRendererObj, "MAtmos Advanced options", this.width / 2, 8, 0xffffff);
+            drawCenteredString(this.fontRenderer, "MAtmos Advanced options", this.width / 2, 8, 0xffffff);
         }
         else
         {
 
             drawGradientRect(0, 0, this.width, this.height, 0xC0C06000, 0x60C06000);
-            drawCenteredString(this.fontRendererObj, "MAtmos Advanced options " + TextFormatting.GOLD + "(Dev mode)", this.width / 2, 8, 0xffffff);
+            drawCenteredString(this.fontRenderer, "MAtmos Advanced options " + TextFormatting.GOLD + "(Dev mode)", this.width / 2, 8, 0xffffff);
 
-            drawCenteredString(this.fontRendererObj, TextFormatting.YELLOW
+            drawCenteredString(this.fontRenderer, TextFormatting.YELLOW
                     + "Dev mode is enabled. This may cause Minecraft to run slower.", this.width / 2, _SEPARATOR
                     + _MIX * (this.IDS_PER_PAGE + 3) - 9, 0xffffff);
         }

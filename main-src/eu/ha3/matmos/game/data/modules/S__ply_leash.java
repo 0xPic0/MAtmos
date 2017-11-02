@@ -47,7 +47,7 @@ public class S__ply_leash extends ModuleProcessor implements Module
 			{
 				EntityLiving var8 = var7.next();
 				
-				if (var8.getLeashed() && var8.getLeashedToEntity() == player)
+				if (var8.getLeashed() && var8.getLeashHolder() == player)
 				{
 					count = count + 1;
 				}

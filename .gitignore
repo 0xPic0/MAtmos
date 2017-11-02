@@ -9,3 +9,4 @@ jars/
 *.iml
 *.launch
 /.nb-gradle/
+.idea

@@ -36,7 +36,7 @@ public class VolumeScroller extends Ha3Scroller
 	protected void doDraw(float fspan)
 	{
 		Minecraft mc = Minecraft.getMinecraft();
-		FontRenderer fontRenderer = mc.fontRendererObj;
+		FontRenderer fontRenderer = mc.fontRenderer;
 		
 		String msgper = (int) Math.floor(this.doneValue * 100) + "%";
 		
@@ -90,7 +90,7 @@ public class VolumeScroller extends Ha3Scroller
 	
 	private int getWidthOf(String s)
 	{
-		return Minecraft.getMinecraft().fontRendererObj.getStringWidth(s);
+		return Minecraft.getMinecraft().fontRenderer.getStringWidth(s);
 	}
 	
 	public float getValue()
