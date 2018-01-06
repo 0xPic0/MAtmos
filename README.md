@@ -33,8 +33,7 @@ Libraries required before compiling this project:
 
 # TODO
 
-- Fix loading lang (no lang is working)
-- Fix message display in chat
+- Nothing
 
 # More About Requierements
 
