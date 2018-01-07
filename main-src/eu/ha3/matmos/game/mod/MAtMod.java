@@ -46,14 +46,14 @@ public class MAtMod extends HaddonImpl implements SupportsFrameEvents, SupportsT
 	
 	// Identity
 	protected final String NAME = "MAtmos";
-	protected final int VERSION = 37;
+	protected final int VERSION = 0;
 	protected final String FOR = "1.12";
 	protected final String ADDRESS = "http://matmos.ha3.eu";
-	protected final Identity identity = new HaddonIdentity(NAME, VERSION, FOR, ADDRESS);
+	protected final Identity identity = (new HaddonIdentity(NAME, VERSION, FOR, ADDRESS)).setPrefix("u");
 	
 	// NotifiableHaddon and UpdateNotifier
 	private final ConfigProperty config = new ConfigProperty();
-	private final Chatter chatter = new Chatter(this, "<MAtmos> ");
+	private final Chatter chatter = new Chatter(this, "MAtmos : ");
 	// http://q.mc.ha3.eu/query/matmos-main-version-vn.json
 	private final UpdateNotifier updateNotifier = new UpdateNotifier(this, "https://raw.githubusercontent.com/ndousson/MAtmos/master/version/versions.json?ver=%d");
 
