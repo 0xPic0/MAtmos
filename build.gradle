@@ -40,7 +40,7 @@ sourceSets {
 }
 
 // Basic project information
-version = "r37"
+version = "u0"
 group = "eu.ha3"
 archivesBaseName = 'presencefootsteps'
 ext.revision = "0"
