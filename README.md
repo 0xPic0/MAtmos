@@ -2,15 +2,15 @@
 
 MAtmos, a Minecraft mod.
 
-Originally authored by Hurricaaane, updated by Sollace to from Minecraft 1.8 to Minecraft 1.10.
+Originally authored by Hurricaaane, updated by Sollace from Minecraft 1.8 to Minecraft 1.10.
 
-Ported to Minecraft 1.12 and 1.12.2 (todo) by ndousson.
+Updated to Minecraft 1.12 and 1.12.2 by ndousson.
 
 # Requierements
 
 Libraries required before compiling this project:
 
-- [MC Commons](https://github.com/Sollace/MC-Commons)
+- [MC Commons](https://github.com/ndousson/MC-Commons)
 - [LiteLoader](http://www.liteloader.com/)
 
 # Installation (IntelliJ IDEA)
@@ -27,7 +27,7 @@ Libraries required before compiling this project:
 
 # DO
 
-- Updated code to MC 1.12
+- Updated code to MC 1.12.2
 - Updated ForgeGradle to 2.3-SNAPSHOT
 - Updated MCPBot Mapping Release
 
@@ -37,8 +37,7 @@ Libraries required before compiling this project:
 
 # More About Requierements
 
-MAtmos source code requires some custom libraries/classes found at https://github.com/Hurricaaane/MC-Commons/ (WTFPLv2).
-1.8 Fork at: https://github.com/dags-/MC-Commons
+MAtmos source code requires some custom libraries/classes found at https://github.com/ndousson/MC-Commons/ (WTFPLv2).
 
 The (net.sf.) PracticalXML library (Apache License) is also required to compile versions that include the XML expansion converter:
 - net.sf.practicalxml.*
